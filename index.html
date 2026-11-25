@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal Institucional del Centro de Salud de Mochumí - Categoría I-3 (RENIPRESS 00004380). Gerencia Regional de Salud Lambayeque.">
+  <title>Inicio | Centro de Salud de Mochumí — GERESA Lambayeque</title>
+
+  <!-- Fuentes Oficiales: Montserrat (Titulares) e Inter (Cuerpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Hojas de Estilo Modulares -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/componentes.css">
+
+  <!-- Iconografía Oficial: Lucide Icons (trazo lineal 2px) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- BARRA SUPERIOR INSTITUCIONAL (Azul GERESA #0C3B60) -->
+  <div class="top-bar" role="region" aria-label="Información institucional oficial">
+    <div class="container top-bar__inner">
+      <span class="top-bar__entidad">
+        GERENCIA REGIONAL DE SALUD LAMBAYEQUE — RED DE SALUD LAMBAYEQUE
+      </span>
+      <div class="top-bar__datos">
+        <span class="badge-renipress">RENIPRESS: 00004380 | Categoría I-3</span>
+        <a href="tel:+51074424430" class="top-bar__tel">
+          <i data-lucide="phone" stroke-width="2" aria-hidden="true"></i> (074) 424430
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER Y NAVEGACIÓN PRINCIPAL -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="Ir al inicio del Centro de Salud de Mochumí">
+        <div class="brand__icon">
+          <i data-lucide="heart-pulse" stroke-width="2" aria-hidden="true"></i>
+        </div>
+        <div class="brand__text">
+          <strong>Centro de Salud Mochumí</strong>
+          <span>Microrred Mochumí • RUC 20437220183</span>
+        </div>
+      </a>
+
+      <!-- Botón Menú Móvil -->
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú de navegación">
+        <i data-lucide="menu" stroke-width="2" aria-hidden="true"></i>
+      </button>
+
+      <!-- Menú de las 12 Páginas -->
+      <nav class="nav" id="mainNav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link active" aria-current="page">Inicio</a></li>
+          <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+          <li><a href="servicios.html" class="nav__link">Servicios I-3</a></li>
+          <li><a href="telemedicina.html" class="nav__link">Telemedicina</a></li>
+          <li><a href="materno-emergencias.html" class="nav__link">Emergencias 24/7</a></li>
+          <li class="nav__dropdown">
+            <button class="nav__link nav__dropdown-btn" aria-expanded="false">
+              Más <i data-lucide="chevron-down" stroke-width="2" aria-hidden="true"></i>
+            </button>
+            <ul class="nav__submenu">
+              <li><a href="microrred.html">Microrred Mochumí</a></li>
+              <li><a href="tramites.html">Trámites y Transparencia</a></li>
+              <li><a href="noticias.html">Noticias y Galería</a></li>
+              <li><a href="inversiones.html">Proyectos PROINVERSIÓN</a></li>
+              <li><a href="faq.html">Preguntas Frecuentes</a></li>
+              <li><a href="contacto.html">Contacto y Ubicación</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="citas.html" class="btn btn--primario btn--nav">
+              <i data-lucide="calendar-check" stroke-width="2" aria-hidden="true"></i> Solicitar Cita
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL (Esta es la única sección que cambiarás en las otras 11 páginas) -->
+  <main id="contenido-principal">
+
+    <!-- 1. HERO PORTADA PRINCIPAL -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="pill-badge">
+            <i data-lucide="shield-check" stroke-width="2" aria-hidden="true"></i>
+            Atención Primaria • Horario Diario 12 Horas
+          </span>
+          <h1 class="hero__title">Salud con calidez al servicio de Mochumí</h1>
+          <p class="hero__subtitle">
+            Brindamos atención médica integral, preventiva y especializada con cercanía humana y tecnología digital para cada familia de nuestro distrito y sus anexos rurales.
+          </p>
+          <div class="hero__actions">
+            <a href="citas.html" class="btn btn--primario">
+              <i data-lucide="calendar" stroke-width="2" aria-hidden="true"></i>
+              Orientación para Citas
+            </a>
+            <a href="telemedicina.html" class="btn btn--secundario">
+              <i data-lucide="video" stroke-width="2" aria-hidden="true"></i>
+              Teleatiende MINSA
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjeta Destacada de Emergencias / Alerta Rápida -->
+        <aside class="hero__card" aria-label="Aviso de Urgencias y Ambulancia">
+          <div class="alert-badge">
+            <i data-lucide="siren" stroke-width="2" aria-hidden="true"></i>
+            <span>Servicio de Urgencias 24/7</span>
+          </div>
+          <h2>Ambulancia y Referencia Permanente</h2>
+          <p>
+            Contamos con unidad asistencial equipada y conductor permanente las 24 horas para estabilización y traslado rápido hacia hospitales de Lambayeque y Chiclayo.
+          </p>
+          <div class="hero__card-info">
+            <div>
+              <small>Dirección</small>
+              <strong>Calle Federico Villarreal S/N, Mochumí</strong>
+            </div>
+            <div>
+              <small>Teléfono Central</small>
+              <strong>(074) 424430</strong>
+            </div>
+          </div>
+          <a href="materno-emergencias.html" class="btn btn--acento btn--full">
+            Ver protocolos de emergencia
+          </a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 2. ACCESOS RÁPIDOS DE LA COMUNIDAD -->
+    <section class="section" aria-labelledby="titulo-accesos">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="titulo-accesos">Accesos Rápidos para el Ciudadano</h2>
+          <p>Encuentra orientación directa sobre nuestros principales servicios asistenciales y canales digitales.</p>
+        </div>
+
+        <div class="grid-4">
+          <a href="servicios.html" class="card-acceso">
+            <div class="card-acceso__icon">
+              <i data-lucide="stethoscope" stroke-width="2" aria-hidden="true"></i>
+            </div>
+            <h3>Cartera de Servicios I-3</h3>
+            <p>Medicina General, Obstetricia, Enfermería, CRED, Odontología e Inmunizaciones.</p>
+            <span class="card-acceso__link">Explorar servicios →</span>
+          </a>
+
+          <a href="telemedicina.html" class="card-acceso">
+            <div class="card-acceso__icon">
+              <i data-lucide="laptop" stroke-width="2" aria-hidden="true"></i>
+            </div>
+            <h3>Telemedicina Regional</h3>
+            <p>Accede a teleconsultas con médicos especialistas sin salir de Mochumí.</p>
+            <span class="card-acceso__link">Cómo acceder →</span>
+          </a>
+
+          <a href="tramites.html" class="card-acceso">
+            <div class="card-acceso__icon">
+              <i data-lucide="file-search" stroke-width="2" aria-hidden="true"></i>
+            </div>
+            <h3>Trámites y SIS</h3>
+            <p>Consulta el estado de tu afiliación SIS, acceso a SISGEDO y Libro de Reclamaciones.</p>
+            <span class="card-acceso__link">Ir a trámites →</span>
+          </a>
+
+          <a href="microrred.html" class="card-acceso">
+            <div class="card-acceso__icon">
+              <i data-lucide="map-pin" stroke-width="2" aria-hidden="true"></i>
+            </div>
+            <h3>Microrred Mochumí</h3>
+            <p>Articulación con los puestos de salud de Maravillas, Paredones y Punto Cuatro.</p>
+            <span class="card-acceso__link">Ver cobertura →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PILARES Y PROYECTO DE INVERSIÓN -->
+    <section class="section section--alt" aria-labelledby="titulo-pilares">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="titulo-pilares">Compromiso con la Salud de Nuestra Gente</h2>
+          <p>Trabajamos bajo la RDE N.° 089-2024-GR.LAMB/GERESA-DESIP para brindar atención oportuna y humana.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card-info">
+            <i data-lucide="baby" stroke-width="2" class="card-info__icon" aria-hidden="true"></i>
+            <h3>Salud Materno Infantil</h3>
+            <p>Control prenatal integral, atención de parto inminente, tamizaje de anemia y esquema completo de vacunación.</p>
+          </article>
+
+          <article class="card-info">
+            <i data-lucide="droplets" stroke-width="2" class="card-info__icon" aria-hidden="true"></i>
+            <h3>Salud Ambiental y Metales Pesados</h3>
+            <p>Programa activo de monitoreo en campo, tamizaje de laboratorio y orientación nutricional preventiva para la cuenca.</p>
+          </article>
+
+          <article class="card-info">
+            <i data-lucide="building-2" stroke-width="2" class="card-info__icon" aria-hidden="true"></i>
+            <h3>Modernización PROINVERSIÓN</h3>
+            <p>Proyecto CUI 2609511 por S/ 21 Millones (Obras por Impuestos) para la ampliación del Centro Materno Infantil.</p>
+            <a href="inversiones.html" class="link-detalle">Ver ficha técnica →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER INSTITUCIONAL -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <h3>Centro de Salud de Mochumí</h3>
+        <p>Establecimiento de Primer Nivel de Atención (Categoría I-3) adscrito a la Red de Salud Lambayeque — GERESA Lambayeque.</p>
+        <p class="footer__tag"><strong>RENIPRESS:</strong> 00004380 | <strong>RUC:</strong> 20437220183</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="servicios.html">Cartera de Servicios I-3</a></li>
+          <li><a href="citas.html">Citas y Orientación Virtual</a></li>
+          <li><a href="tramites.html">Transparencia y Libro de Reclamaciones</a></li>
+          <li><a href="faq.html">Preguntas Frecuentes (FAQ)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contacto Oficial</h4>
+        <ul class="footer__contacto">
+          <li><i data-lucide="map-pin" stroke-width="2" aria-hidden="true"></i> Calle Federico Villarreal S/N, Mochumí</li>
+          <li><i data-lucide="phone" stroke-width="2" aria-hidden="true"></i> (074) 424430</li>
+          <li><i data-lucide="clock" stroke-width="2" aria-hidden="true"></i> Atención: 12 horas diarias (Urgencias 24/7)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 Centro de Salud de Mochumí — Gerencia Regional de Salud Lambayeque. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE CONSTANTE: WHATSAPP / TELEATIENDE (Esquina inferior derecha) -->
+  <a href="citas.html" class="fab-asistente" aria-label="Asistente virtual de WhatsApp y Teleatiende para consultas y urgencias">
+    <i data-lucide="message-circle" stroke-width="2" aria-hidden="true"></i>
+    <span>Orientación / Teleatiende</span>
+  </a>
+
+  <!-- Script Nativo -->
+  <script src="js/main.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

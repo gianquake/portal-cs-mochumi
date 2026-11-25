@@ -1,0 +1,70 @@
+<main id="contenido-principal">
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">Inicio / Contacto y Ubicación</div>
+      <h1>Contacto y Ubicación Oficial</h1>
+      <p>Comunícate directamente con nuestra central institucional o ubícanos en el distrito de Mochumí.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container hero__grid">
+      <!-- Formulario de Contacto General -->
+      <div class="form-card">
+        <h2 style="margin-bottom: 0.5rem;">Envíanos tu Consulta</h2>
+        <p style="color: var(--color-gris-ui); margin-bottom: 1.5rem;">Para consultas administrativas, campañas comunitarias o información institucional.</p>
+
+        <form class="form-institucional">
+          <div class="form-group">
+            <label for="contactoNombre">Nombre Completo *</label>
+            <input type="text" id="contactoNombre" class="form-control" required placeholder="Ingresa tu nombre y apellidos">
+          </div>
+
+          <div class="form-group">
+            <label for="contactoCorreo">Correo Electrónico o Teléfono *</label>
+            <input type="text" id="contactoCorreo" class="form-control" required placeholder="ejemplo@correo.com / 979 000 000">
+          </div>
+
+          <div class="form-group">
+            <label for="contactoAsunto">Asunto *</label>
+            <input type="text" id="contactoAsunto" class="form-control" required placeholder="Motivo de tu consulta">
+          </div>
+
+          <div class="form-group">
+            <label for="contactoMensaje">Mensaje *</label>
+            <textarea id="contactoMensaje" class="form-control" rows="4" required placeholder="Escribe aquí tu mensaje..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primario btn--full">
+            <i data-lucide="mail" stroke-width="2"></i> Enviar mensaje institucional
+          </button>
+
+          <div class="form-respuesta" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <!-- Datos de Contacto y Mapa -->
+      <aside>
+        <div class="card-acceso" style="margin-bottom: 1.5rem;">
+          <h3>Información de Contacto</h3>
+          <ul class="footer__contacto" style="color: var(--color-texto); margin-top: 1rem;">
+            <li style="color: var(--color-texto);"><i data-lucide="map-pin" stroke-width="2" style="color: var(--color-primario);"></i> <strong>Dirección:</strong> Calle Federico Villarreal S/N, Mochumí, Lambayeque</li>
+            <li style="color: var(--color-texto);"><i data-lucide="phone" stroke-width="2" style="color: var(--color-primario);"></i> <strong>Teléfono Central:</strong> (074) 424430</li>
+            <li style="color: var(--color-texto);"><i data-lucide="clock" stroke-width="2" style="color: var(--color-primario);"></i> <strong>Horario:</strong> 12 horas diarias (Urgencias 24/7)</li>
+            <li style="color: var(--color-texto);"><i data-lucide="building" stroke-width="2" style="color: var(--color-primario);"></i> <strong>Jurisdicción:</strong> Red de Salud Lambayeque — GERESA</li>
+          </ul>
+        </div>
+
+        <!-- Mapa Georreferenciado Ligero (con loading="lazy" para rendimiento PageSpeed) -->
+        <div class="tabla-wrapper" style="height: 290px;">
+          <iframe
+            title="Ubicación del Centro de Salud de Mochumí en Calle Federico Villarreal S/N"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-79.8725%2C-6.5515%2C-79.8565%2C-6.5415&amp;layer=mapnik&amp;marker=-6.5465%2C-79.8645"
+            style="width: 100%; height: 100%; border: 0;"
+            loading="lazy">
+          </iframe>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>

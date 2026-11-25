@@ -1,0 +1,158 @@
+/* Reset y Base Accesible */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-cuerpo);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-titulos);
+  color: var(--color-secundario);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transicion);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--color-acento);
+  outline-offset: 2px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Contenedores y Secciones */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.section {
+  padding: 4.5rem 0;
+}
+
+.section--alt {
+  background-color: var(--color-blanco);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem;
+}
+
+.section-header h2 {
+  font-size: clamp(1.65rem, 3vw, 2.15rem);
+  margin-bottom: 0.75rem;
+}
+
+.section-header p {
+  color: var(--color-gris-ui);
+  font-size: 1.05rem;
+}
+
+/* Grids Modulares */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.75rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Botones Oficiales */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-titulos);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: var(--radius-tarjeta);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: var(--transicion);
+}
+
+.btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.btn--primario {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+}
+
+.btn--primario:hover {
+  background-color: var(--color-primario-dark);
+  transform: translateY(-1px);
+}
+
+.btn--secundario {
+  background-color: var(--color-blanco);
+  color: var(--color-secundario);
+  border-color: var(--color-secundario);
+}
+
+.btn--secundario:hover {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+}
+
+.btn--acento {
+  background-color: var(--color-acento);
+  color: var(--color-texto);
+  font-weight: 700;
+}
+
+.btn--acento:hover {
+  background-color: var(--color-acento-dark);
+}
+
+.btn--full {
+  width: 100%;
+}
+
+.btn--nav {
+  padding: 0.55rem 1.1rem;
+  font-size: 0.88rem;
+}

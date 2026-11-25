@@ -1,0 +1,27 @@
+:root {
+  /* Paleta de Colores Oficial (Regla 70-20-10) */
+  --color-primario: #00875A;       /* Verde Esmeralda Sanitario */
+  --color-primario-dark: #006B47;  /* Hover accesible WCAG AA */
+  --color-secundario: #0C3B60;     /* Azul Institucional GERESA */
+  --color-fondo: #F4F9F5;          /* Menta Suave / Fondo Principal (70%) */
+  --color-blanco: #FFFFFF;
+  --color-texto: #172B4D;          /* Carbón Legibilidad (WCAG 2.1 AA) */
+  --color-acento: #E6B800;         /* Acento Cálido / Sol Mochumí (10%) */
+  --color-acento-dark: #CCA300;
+  --color-gris-ui: #64748B;        /* Gris Auxiliar UI */
+  --color-borde: #DCE7E1;
+
+  /* Tipografía Oficial */
+  --font-titulos: 'Montserrat', sans-serif;
+  --font-cuerpo: 'Inter', sans-serif;
+
+  /* Radios y Sombras UI */
+  --radius-tarjeta: 12px;
+  --radius-modulo: 20px;
+  --sombra-ui: 0px 8px 24px rgba(0, 135, 90, 0.08);
+  --sombra-hover: 0px 12px 28px rgba(12, 59, 96, 0.12);
+
+  /* Layout */
+  --max-width: 1200px;
+  --transicion: all 0.2s ease;
+}

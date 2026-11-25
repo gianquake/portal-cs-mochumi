@@ -1,0 +1,88 @@
+<main id="contenido-principal">
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">Inicio / Citas y Orientación Virtual</div>
+      <h1>Citas y Orientación Virtual</h1>
+      <p>Solicita orientación para tu cita en consulta externa o Teleatiende y conoce los requisitos de atención SIS.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container hero__grid">
+      <!-- Formulario Dinámico (conectado a js/main.js) -->
+      <div class="form-card">
+        <h2 style="margin-bottom: 0.5rem;">Formulario de Orientación para Citas</h2>
+        <p style="color: var(--color-gris-ui); margin-bottom: 1.5rem;">Completa tus datos y nuestro equipo de admisión te orientará sobre horarios y disponibilidad.</p>
+
+        <form class="form-institucional">
+          <div class="form-group">
+            <label for="citaNombre">Nombres y Apellidos Completos *</label>
+            <input type="text" id="citaNombre" class="form-control" required placeholder="Ej. María Elena Cajusol">
+          </div>
+
+          <div class="grid-3" style="grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label for="citaDni">Número de DNI *</label>
+              <input type="text" id="citaDni" class="form-control" maxlength="8" pattern="[0-9]{8}" required placeholder="8 dígitos">
+            </div>
+            <div class="form-group">
+              <label for="citaTelefono">Teléfono / WhatsApp *</label>
+              <input type="tel" id="citaTelefono" class="form-control" required placeholder="Ej. 979 000 000">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="citaServicio">Servicio Requerido *</label>
+            <select id="citaServicio" class="form-control" required>
+              <option value="">Selecciona una especialidad o servicio...</option>
+              <option value="medicina">Medicina General (Consulta Externa)</option>
+              <option value="obstetricia">Obstetricia y Control Prenatal</option>
+              <option value="cred">Enfermería / CRED e Inmunizaciones</option>
+              <option value="odontologia">Odontología Preventiva y Restaurativa</option>
+              <option value="telemedicina">Telemedicina (Teleatiende MINSA)</option>
+              <option value="metales">Monitoreo de Metales Pesados</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="citaSeguro">Tipo de Seguro *</label>
+            <select id="citaSeguro" class="form-control" required>
+              <option value="sis">Seguro Integral de Salud (SIS)</option>
+              <option value="otro">Otro / Atención Particular</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn--primario btn--full">
+            <i data-lucide="send" stroke-width="2"></i> Enviar solicitud de orientación
+          </button>
+
+          <div class="form-respuesta" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <!-- Requisitos y Canales Directos -->
+      <aside>
+        <div class="card-acceso" style="margin-bottom: 1.5rem;">
+          <div class="card-acceso__icon"><i data-lucide="id-card" stroke-width="2"></i></div>
+          <h3>Requisitos para tu Atención</h3>
+          <ul style="list-style: disc; padding-left: 1.25rem; color: var(--color-texto); font-size: 0.94rem;">
+            <li style="margin-bottom: 0.5rem;"><strong>DNI físico vigente</strong> (o carné de extranjería).</li>
+            <li style="margin-bottom: 0.5rem;"><strong>Afiliación activa al SIS</strong> (verificable en admisión).</li>
+            <li style="margin-bottom: 0.5rem;">Acudir 15 minutos antes de tu turno programado.</li>
+            <li>Para menores de edad: acudir acompañado de padre, madre o apoderado con DNI.</li>
+          </ul>
+        </div>
+
+        <div class="hero__card">
+          <div class="alert-badge"><i data-lucide="phone-call" stroke-width="2"></i><span>Canales Directos</span></div>
+          <h2>Atención Telefónica</h2>
+          <p>Horario regular de consulta externa: <strong>12 horas ininterrumpidas</strong> todos los días.</p>
+          <div class="hero__card-info">
+            <div><small>Central Telefónica</small><strong>(074) 424430</strong></div>
+            <div><small>Urgencias y Partos</small><strong>Atención 24/7</strong></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
