@@ -619,3 +619,1680 @@ details.faq-item p {
   color: var(--color-texto);
   font-size: 0.95rem;
 }
+
+
+/* ========================================
+   PORTADA CON FOTOGRAFÍA REAL
+======================================== */
+
+.hero--fotografia {
+background:
+    linear-gradient(
+        90deg,
+        rgba(12, 59, 96, 0.80) 0%,
+        rgba(12, 59, 96, 0.60) 40%,
+        rgba(12, 59, 96, 0.15) 100%
+    ),
+    url("../img/fachada-principal.webp");
+
+background-size: cover;
+background-position: center top;
+background-repeat: no-repeat;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+}
+
+/* Título principal */
+
+.hero--fotografia .hero__title {
+    color: #FFFFFF;
+}
+
+/* Descripción */
+
+.hero--fotografia .hero__subtitle {
+    color: #FFFFFF;
+}
+
+/* Etiqueta institucional */
+
+.hero--fotografia .pill-badge {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #006B47;
+}
+
+/* Botón de Telemedicina */
+
+.hero--fotografia .btn--secundario {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    background-color: transparent;
+}
+
+.hero--fotografia .btn--secundario:hover {
+    background-color: #FFFFFF;
+    color: #0C3B60;
+}
+
+/* Tarjeta de emergencias */
+
+.hero--fotografia .hero__card {
+    background-color: rgba(12, 59, 96, 0.93);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Adaptación a celulares */
+
+@media (max-width: 960px) {
+
+.hero--fotografia {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(12, 59, 96, 0.93) 0%,
+            rgba(12, 59, 96, 0.75) 40%,
+            rgba(12, 59, 96, 0.25) 100%
+        ),
+        url("../img/fachada-principal.webp");
+
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 580px;
+    display: flex;
+    align-items: center;
+}
+}
+
+/* ========================================
+   ACCESOS RÁPIDOS - PÁGINA PRINCIPAL
+======================================== */
+
+.accesos-inicio {
+    background-color: #F4F9F5;
+    padding: 80px 0;
+}
+
+.etiqueta-seccion {
+    display: inline-block;
+    color: #006B47;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+/* Tarjetas */
+
+.accesos-inicio .card-acceso {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border-top: 4px solid #00875A;
+    padding: 28px 24px;
+    box-shadow: 0 8px 24px rgba(0, 135, 90, 0.08);
+}
+
+/* Iconos */
+
+.accesos-inicio .card-acceso__icon {
+    width: 60px;
+    height: 60px;
+    background-color: #E5F3EB;
+    color: #00875A;
+    border-radius: 12px;
+    margin-bottom: 22px;
+}
+
+.accesos-inicio .card-acceso__icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* Títulos */
+
+.accesos-inicio .card-acceso h3 {
+    color: #0C3B60;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+/* Descripciones */
+
+.accesos-inicio .card-acceso p {
+    color: #64748B;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+/* Enlaces inferiores */
+
+.accesos-inicio .card-acceso__link {
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid #DCE7E1;
+    color: #006B47;
+    font-weight: 600;
+}
+
+/* Efecto al pasar el cursor */
+
+.accesos-inicio .card-acceso:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 135, 90, 0.15);
+}
+
+/* Accesibilidad mediante teclado */
+
+.accesos-inicio .card-acceso:focus-visible {
+    outline: 3px solid #00875A;
+    outline-offset: 4px;
+}
+
+/* Preferencias de movimiento */
+
+@media (prefers-reduced-motion: reduce) {
+    .accesos-inicio .card-acceso {
+        transition: none;
+    }
+
+    .accesos-inicio .card-acceso:hover {
+        transform: none;
+    }
+}
+
+
+/* ========================================
+   PRESENTACIÓN DEL CENTRO DE SALUD
+======================================== */
+
+.presentacion-inicio {
+    background-color: #FFFFFF;
+    padding: 90px 0;
+}
+
+.presentacion__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Fotografía institucional */
+
+.presentacion__visual {
+    position: relative;
+}
+
+.presentacion__imagen {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 135, 90, 0.08);
+}
+/* Distintivo institucional */
+
+.presentacion__distintivo {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    background-color: #0C3B60;
+    color: #FFFFFF;
+    padding: 20px 24px;
+    margin-top: 16px;
+    border-radius: 12px;
+}
+
+.presentacion__distintivo svg {
+    width: 36px;
+    height: 36px;
+    color: #E6B800;
+    flex-shrink: 0;
+}
+
+.presentacion__distintivo strong {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.presentacion__distintivo span {
+    display: block;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* Contenido institucional */
+
+.presentacion__contenido h2 {
+    color: #0C3B60;
+    font-size: clamp(26px, 3vw, 36px);
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.presentacion__contenido p {
+    color: #64748B;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+/* Lista de compromisos */
+
+.presentacion__lista {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 30px;
+}
+
+.presentacion__lista li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    color: #172B4D;
+    font-weight: 500;
+}
+
+.presentacion__lista svg {
+    width: 22px;
+    height: 22px;
+    color: #00875A;
+    flex-shrink: 0;
+}
+
+/* Botón */
+
+.presentacion__contenido .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Adaptación a tablets */
+
+@media (max-width: 960px) {
+
+    .presentacion-inicio {
+        padding: 60px 0;
+    }
+
+    .presentacion__grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .presentacion__imagen {
+        height: auto;
+        object-position: center 25%;
+    }
+
+}
+
+/* Adaptación a celulares */
+
+@media (max-width: 480px) {
+
+    .presentacion-inicio {
+        padding: 45px 0;
+    }
+
+    .presentacion__imagen {
+        height:auto;
+        object-position: center 22%;
+    }
+
+    .presentacion__distintivo {
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+        padding: 14px;
+    }
+
+    .presentacion__distintivo strong {
+        font-size: 18px;
+    }
+
+    .presentacion__distintivo svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .presentacion__contenido .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+
+
+/* ========================================
+   PILARES INSTITUCIONALES - INICIO
+======================================== */
+
+.pilares-inicio {
+    background-color: #F4F9F5;
+    padding: 80px 0;
+}
+
+/* Diseño general de las tarjetas */
+
+.pilar-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border: 1px solid #DCE7E1;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 135, 90, 0.08);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+/* Colores institucionales */
+
+.pilar-card--verde {
+    border-top: 5px solid #00875A;
+}
+
+.pilar-card--azul {
+    border-top: 5px solid #0C3B60;
+}
+
+.pilar-card--amarillo {
+    border-top: 5px solid #E6B800;
+}
+
+/* Parte superior de la tarjeta */
+
+.pilar-card__superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+/* Numeración decorativa */
+
+.pilar-card__numero {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #CBD5E1;
+}
+
+/* Iconos */
+
+.pilar-card__icono {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.pilar-card__icono svg {
+    width: 32px;
+    height: 32px;
+    stroke-width: 2;
+}
+
+.pilar-card--verde .pilar-card__icono {
+    background-color: #E5F3EB;
+    color: #00875A;
+}
+
+.pilar-card--azul .pilar-card__icono {
+    background-color: #E5EDF5;
+    color: #0C3B60;
+}
+
+.pilar-card--amarillo .pilar-card__icono {
+    background-color: #FFF5CE;
+    color: #947600;
+}
+
+/* Títulos */
+
+.pilar-card h3 {
+    color: #0C3B60;
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+/* Descripciones */
+
+.pilar-card p {
+    color: #64748B;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Enlaces inferiores */
+
+.pilar-card__enlace {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid #DCE7E1;
+
+    color: #006B47;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.pilar-card__enlace svg {
+    width: 19px;
+    height: 19px;
+}
+
+.pilar-card--azul .pilar-card__enlace {
+    color: #0C3B60;
+}
+
+.pilar-card--amarillo .pilar-card__enlace {
+    color: #806600;
+}
+
+.pilar-card__enlace:hover {
+    text-decoration: underline;
+}
+
+/* Efecto suave */
+
+.pilar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0, 135, 90, 0.12);
+}
+
+/* Referencia institucional */
+
+.pilares-inicio__referencia {
+    text-align: center;
+    color: #64748B;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 30px;
+}
+
+/* Accesibilidad */
+
+.pilar-card__enlace:focus-visible {
+    outline: 3px solid #00875A;
+    outline-offset: 5px;
+    border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .pilar-card {
+        transition: none;
+    }
+
+    .pilar-card:hover {
+        transform: none;
+    }
+
+}
+
+/* Adaptación a tablets y celulares */
+
+@media (max-width: 960px) {
+
+    .pilares-inicio {
+        padding: 60px 0;
+    }
+
+    .pilares-inicio .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .pilares-inicio {
+        padding: 45px 0;
+    }
+
+    .pilares-inicio .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .pilar-card {
+        padding: 24px;
+    }
+
+    .pilar-card h3 {
+        font-size: 19px;
+    }
+
+}
+
+
+/* ========================================
+   NOTICIAS INSTITUCIONALES - INICIO
+======================================== */
+
+.noticias-inicio {
+    background-color: #FFFFFF;
+    padding: 80px 0;
+}
+
+/* Tarjetas de noticias */
+
+.noticia-inicio {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE7E1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 135, 90, 0.08);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+/* Portada de cada noticia */
+
+.noticia-inicio__portada {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #0C3B60,
+        #00875A
+    );
+}
+
+.noticia-inicio__portada svg {
+    width: 58px;
+    height: 58px;
+    color: #FFFFFF;
+    stroke-width: 1.7;
+}
+
+/* Contenido */
+
+.noticia-inicio__contenido {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 26px;
+}
+
+/* Categoría */
+
+.noticia-inicio__categoria {
+    align-self: flex-start;
+    color: #006B47;
+    background-color: #E5F3EB;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Fecha */
+
+.noticia-inicio time {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #64748B;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.noticia-inicio time svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Título */
+
+.noticia-inicio h3 {
+    color: #0C3B60;
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 14px;
+}
+
+/* Descripción */
+
+.noticia-inicio p {
+    color: #64748B;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+/* Enlace */
+
+.noticia-inicio__enlace {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid #DCE7E1;
+    color: #006B47;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.noticia-inicio__enlace svg {
+    width: 19px;
+    height: 19px;
+}
+
+.noticia-inicio__enlace:hover {
+    text-decoration: underline;
+}
+
+.noticia-inicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0, 135, 90, 0.14);
+}
+
+/* Fuente institucional */
+
+.noticias-inicio__fuente {
+    text-align: center;
+    color: #64748B;
+    font-size: 13px;
+    margin-top: 28px;
+}
+
+/* Botón inferior */
+
+.noticias-inicio__boton {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.noticias-inicio__boton .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Accesibilidad */
+
+.noticia-inicio__enlace:focus-visible {
+    outline: 3px solid #00875A;
+    outline-offset: 5px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .noticia-inicio {
+        transition: none;
+    }
+
+    .noticia-inicio:hover {
+        transform: none;
+    }
+
+}
+
+/* Tablets */
+
+@media (max-width: 960px) {
+
+    .noticias-inicio {
+        padding: 60px 0;
+    }
+
+    .noticias-inicio .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Celulares */
+
+@media (max-width: 600px) {
+
+    .noticias-inicio {
+        padding: 45px 0;
+    }
+
+    .noticias-inicio .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .noticia-inicio__contenido {
+        padding: 22px;
+    }
+
+    .noticia-inicio__portada {
+        height: 130px;
+    }
+
+    .noticias-inicio__boton .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+
+/* ========================================
+   FOTOGRAFÍAS DE NOTICIAS INSTITUCIONALES
+======================================== */
+
+.noticia-inicio__portada {
+    height: 230px;
+    overflow: hidden;
+    background: #F4F9F5;
+}
+
+.noticia-inicio__portada img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.35s ease;
+}
+
+/* Acercamiento suave de las fotografías */
+
+.noticia-inicio:hover .noticia-inicio__portada img {
+    transform: scale(1.04);
+}
+
+/* Créditos de las fotografías */
+
+.noticia-inicio .noticia-inicio__credito {
+    background-color: #F4F9F5;
+    color: #64748B;
+    font-size: 11px;
+    text-align: center;
+    padding: 8px 12px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Adaptación a celulares */
+
+@media (max-width: 600px) {
+
+    .noticia-inicio__portada {
+        height: 210px;
+    }
+
+}
+
+/* Accesibilidad */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .noticia-inicio__portada img {
+        transition: none;
+    }
+
+    .noticia-inicio:hover .noticia-inicio__portada img {
+        transform: none;
+    }
+
+}
+
+
+/* ========================================
+   FOOTER INSTITUCIONAL MEJORADO
+======================================== */
+
+.footer--mejorado {
+    background-color: #0C3B60;
+    color: #FFFFFF;
+    border-top: 5px solid #00875A;
+    padding: 50px 0 0;
+}
+
+/* IDENTIDAD INSTITUCIONAL */
+
+.footer--mejorado .footer__identidad {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 30px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.footer--mejorado .footer__logo {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00875A;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+.footer--mejorado .footer__logo svg {
+    width: 34px;
+    height: 34px;
+    color: #FFFFFF;
+}
+
+.footer--mejorado .footer__identidad h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-size: 25px;
+    margin: 0 0 5px;
+}
+
+.footer--mejorado .footer__identidad p {
+    color: #D4E4EF;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* DISTRIBUCIÓN DE COLUMNAS */
+
+.footer--mejorado .footer__grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.1fr;
+    gap: 50px;
+    padding: 0 0 35px;
+}
+
+.footer--mejorado .footer__col h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+.footer--mejorado .footer__col p {
+    color: #D4E4EF;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* DATOS INSTITUCIONALES */
+
+.footer--mejorado .footer__registro {
+    margin-top: 20px;
+}
+
+.footer--mejorado .footer__registro p {
+    margin: 5px 0;
+}
+
+.footer--mejorado .footer__registro strong {
+    color: #E6B800;
+}
+
+/* ENLACES RÁPIDOS */
+
+.footer--mejorado .footer__enlaces {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer--mejorado .footer__enlaces li {
+    margin-bottom: 14px;
+}
+
+.footer--mejorado .footer__enlaces a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #D4E4EF;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer--mejorado .footer__enlaces svg {
+    width: 16px;
+    height: 16px;
+    color: #E6B800;
+    flex-shrink: 0;
+}
+
+.footer--mejorado .footer__enlaces a:hover {
+    color: #E6B800;
+    text-decoration: underline;
+}
+
+/* INFORMACIÓN DE CONTACTO */
+
+.footer--mejorado .footer__contacto {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer--mejorado .footer__contacto li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.footer--mejorado .footer__contacto svg {
+    width: 21px;
+    height: 21px;
+    color: #E6B800;
+    flex-shrink: 0;
+}
+
+.footer--mejorado .footer__contacto strong {
+    display: block;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer--mejorado .footer__contacto span,
+.footer--mejorado .footer__contacto a {
+    display: block;
+    color: #D4E4EF;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ORIENTACIÓN AL CIUDADANO */
+
+.footer--mejorado .footer__orientacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.20);
+    padding: 28px 0;
+}
+
+.footer--mejorado .footer__orientacion-texto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer--mejorado .footer__orientacion-texto > svg {
+    color: #E6B800;
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+}
+
+.footer--mejorado .footer__orientacion h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.footer--mejorado .footer__orientacion p {
+    color: #D4E4EF;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer--mejorado .footer__orientacion .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #006B47;
+    color: #FFFFFF;
+}
+
+/* PARTE INFERIOR */
+
+.footer--mejorado .footer__bottom {
+    background-color: #092C47;
+    padding: 25px 0 80px;
+    text-align: center;
+}
+
+.footer--mejorado .footer__bottom p {
+    color: #D4E4EF;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.footer--mejorado .footer__academico {
+    margin-top: 8px !important;
+}
+
+/* ACCESIBILIDAD */
+
+.footer--mejorado a:focus-visible {
+    outline: 2px solid #E6B800;
+    outline-offset: 5px;
+    border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .footer--mejorado a {
+        transition: none;
+    }
+}
+
+/* ADAPTACIÓN A TABLETS */
+
+@media (max-width: 960px) {
+
+    .footer--mejorado .footer__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 600px) {
+
+    .footer--mejorado {
+        padding-top: 35px;
+    }
+
+    .footer--mejorado .footer__grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer--mejorado .footer__identidad h2 {
+        font-size: 19px;
+    }
+
+    .footer--mejorado .footer__logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer--mejorado .footer__orientacion {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer--mejorado .footer__orientacion .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+
+/* ========================================
+   BOTÓN FLOTANTE DE AYUDA
+======================================== */
+
+.fab-asistente {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    background-color: #00875A;
+    color: #FFFFFF;
+    padding: 16px 24px;
+    border-radius: 50px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    box-shadow: 0 8px 25px rgba(0, 135, 90, 0.30);
+    transition: transform 0.3s ease,
+                background-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.fab-asistente svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+/* Efecto de elevación */
+
+.fab-asistente:hover {
+    background-color: #006B47;
+    color: #FFFFFF;
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 135, 90, 0.40);
+}
+
+/* Accesibilidad */
+
+.fab-asistente:focus-visible {
+    outline: 3px solid #E6B800;
+    outline-offset: 5px;
+}
+
+/* Adaptación a celulares */
+
+@media (max-width: 600px) {
+
+    .fab-asistente {
+        width: 56px;
+        height: 56px;
+        padding: 0;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 50%;
+    }
+
+    .fab-asistente span {
+        display: none;
+    }
+
+}
+
+/* Preferencias de movimiento reducido */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .fab-asistente {
+        transition: none;
+    }
+
+    .fab-asistente:hover {
+        transform: none;
+    }
+
+}
+
+/* ========================================
+   ANIMACIÓN DEL BOTÓN FLOTANTE
+======================================== */
+
+@keyframes flotarAsistente {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+}
+
+/* Movimiento suave hacia arriba y abajo */
+
+.fab-asistente {
+    animation: flotarAsistente 1.2s ease-in-out 4;
+}
+
+/* Detener el movimiento al interactuar */
+
+.fab-asistente:hover,
+.fab-asistente:focus-visible {
+    animation: none;
+    transform: translateY(-5px);
+}
+
+/* Accesibilidad */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .fab-asistente {
+        animation: none;
+    }
+
+    .fab-asistente:hover,
+    .fab-asistente:focus-visible {
+        transform: none;
+    }
+
+}
+
+
+/* ==========================================
+   PÁGINA NOSOTROS - PORTADA INSTITUCIONAL
+========================================== */
+
+.nosotros-portada {
+    background: linear-gradient(
+        120deg,
+        #F3F8F6,
+        #EDF4FA
+    );
+    padding: 30px 0 65px;
+}
+
+/* Ruta de navegación */
+
+.nosotros-ruta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+    font-size: 14px;
+    color: #64748B;
+}
+
+.nosotros-ruta a {
+    color: #0C3B60;
+    text-decoration: none;
+}
+
+.nosotros-ruta a:hover {
+    text-decoration: underline;
+}
+
+.nosotros-ruta svg {
+    width: 15px;
+    height: 15px;
+}
+
+/* Distribución de la portada */
+
+.nosotros-portada__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+}
+
+/* Etiqueta institucional */
+
+.nosotros-portada__etiqueta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #00875A;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.nosotros-portada__etiqueta::before {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #00875A;
+    border-radius: 10px;
+}
+
+/* Título */
+
+.nosotros-portada__contenido h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(32px, 4vw, 50px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #0C3B60;
+    margin-bottom: 20px;
+}
+
+/* Línea decorativa */
+
+.nosotros-portada__linea {
+    width: 65px;
+    height: 4px;
+    background-color: #00875A;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+/* Párrafos */
+
+.nosotros-portada__contenido p {
+    color: #475569;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+/* Compromiso institucional */
+
+.nosotros-portada__compromiso {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #006B47;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.nosotros-portada__compromiso svg {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+/* Fotografía real */
+
+.nosotros-portada__foto {
+    margin: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    box-shadow: 0 15px 35px rgba(12, 59, 96, 0.15);
+}
+
+.nosotros-portada__foto img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Descripción debajo de la fotografía */
+
+.nosotros-portada__foto figcaption {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 22px;
+    background-color: #0C3B60;
+    color: #FFFFFF;
+}
+
+.nosotros-portada__foto figcaption svg {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    color: #FFFFFF;
+}
+
+.nosotros-portada__foto figcaption strong {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.nosotros-portada__foto figcaption span {
+    display: block;
+    font-size: 13px;
+    color: #DDE8F0;
+}
+
+/* ==========================================
+   DISEÑO RESPONSIVE
+========================================== */
+
+@media (max-width: 960px) {
+
+    .nosotros-portada__grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .nosotros-portada {
+        padding: 25px 0 45px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .nosotros-portada__contenido h1 {
+        font-size: 32px;
+    }
+
+    .nosotros-portada__contenido p {
+        font-size: 15px;
+    }
+
+    .nosotros-portada__etiqueta {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .nosotros-portada__compromiso {
+        font-size: 14px;
+    }
+
+    .nosotros-portada__foto figcaption {
+        padding: 18px;
+    }
+
+}
+
+
+/* ==========================================
+   NOSOTROS - PROPÓSITO, MISIÓN Y VISIÓN
+========================================== */
+
+.nosotros-esencia {
+    padding: 75px 0;
+    background-color: #F4F9F5;
+}
+
+/* Encabezado */
+
+.nosotros-esencia__encabezado {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.nosotros-esencia__encabezado h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(26px, 3vw, 36px);
+    color: #0C3B60;
+    margin-bottom: 15px;
+}
+
+.nosotros-esencia__encabezado p {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Distribución de tarjetas */
+
+.nosotros-esencia__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+/* Diseño general */
+
+.esencia-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE7E1;
+    border-top: 5px solid;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(12, 59, 96, 0.06);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.esencia-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(12, 59, 96, 0.12);
+}
+
+/* Parte superior */
+
+.esencia-card__superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Iconos */
+
+.esencia-card__icono {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.esencia-card__icono svg {
+    width: 30px;
+    height: 30px;
+}
+
+/* Numeración decorativa */
+
+.esencia-card__numero {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #DCE5EB;
+}
+
+/* Títulos y textos */
+
+.esencia-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #0C3B60;
+    margin-bottom: 15px;
+}
+
+.esencia-card p {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.8;
+    flex: 1;
+    margin-bottom: 25px;
+}
+
+/* Línea decorativa */
+
+.esencia-card__linea {
+    width: 45px;
+    height: 4px;
+    border-radius: 10px;
+}
+
+/* PROPÓSITO - VERDE */
+
+.esencia-card--verde {
+    border-top-color: #00875A;
+}
+
+.esencia-card--verde .esencia-card__icono {
+    background-color: #E6F4ED;
+    color: #00875A;
+}
+
+.esencia-card--verde .esencia-card__linea {
+    background-color: #00875A;
+}
+
+/* MISIÓN - AZUL */
+
+.esencia-card--azul {
+    border-top-color: #0C3B60;
+}
+
+.esencia-card--azul .esencia-card__icono {
+    background-color: #E8EFF6;
+    color: #0C3B60;
+}
+
+.esencia-card--azul .esencia-card__linea {
+    background-color: #0C3B60;
+}
+
+/* VISIÓN - AMARILLO */
+
+.esencia-card--amarillo {
+    border-top-color: #E6B800;
+}
+
+.esencia-card--amarillo .esencia-card__icono {
+    background-color: #FFF8DF;
+    color: #876900;
+}
+
+.esencia-card--amarillo .esencia-card__linea {
+    background-color: #E6B800;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 960px) {
+
+    .nosotros-esencia__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .nosotros-esencia {
+        padding: 45px 0;
+    }
+
+    .nosotros-esencia__grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .esencia-card {
+        padding: 25px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .esencia-card {
+        transition: none;
+    }
+
+    .esencia-card:hover {
+        transform: none;
+    }
+
+}
