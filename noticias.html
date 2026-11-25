@@ -1,4 +1,93 @@
-<main id="contenido-principal">
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal Institucional del Centro de Salud de Mochumí - Categoría I-3 (RENIPRESS 00004380). Gerencia Regional de Salud Lambayeque.">
+  <title>Noticias y Galería | Centro de Salud de Mochumí</title>
+
+  <!-- Fuentes Oficiales: Montserrat (Titulares) e Inter (Cuerpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Hojas de Estilo Modulares -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/componentes.css">
+
+  <!-- Iconografía Oficial: Lucide Icons (trazo lineal 2px) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="encabezado-fijo">
+
+  <!-- BARRA SUPERIOR INSTITUCIONAL (Azul GERESA #0C3B60) -->
+  <div class="top-bar" role="region" aria-label="Información institucional oficial">
+    <div class="container top-bar__inner">
+      <span class="top-bar__entidad">
+        GERENCIA REGIONAL DE SALUD LAMBAYEQUE — RED DE SALUD LAMBAYEQUE
+      </span>
+      <div class="top-bar__datos">
+        <span class="badge-renipress">RENIPRESS: 00004380 | Categoría I-3</span>
+        <a href="tel:+51074424430" class="top-bar__tel">
+          <i data-lucide="phone" stroke-width="2" aria-hidden="true"></i> (074) 424430
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER Y NAVEGACIÓN PRINCIPAL -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="Ir al inicio del Centro de Salud de Mochumí">
+        <div class="brand__icon">
+          <i data-lucide="heart-pulse" stroke-width="2" aria-hidden="true"></i>
+        </div>
+        <div class="brand__text">
+          <strong>Centro de Salud Mochumí</strong>
+          <span>Microrred Mochumí • RUC 20437220183</span>
+        </div>
+      </a>
+
+      <!-- Botón Menú Móvil -->
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú de navegación">
+        <i data-lucide="menu" stroke-width="2" aria-hidden="true"></i>
+      </button>
+
+      <!-- Menú de las 12 Páginas -->
+      <nav class="nav" id="mainNav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+          <li><a href="servicios.html" class="nav__link">Servicios I-3</a></li>
+          <li><a href="telemedicina.html" class="nav__link">Telemedicina</a></li>
+          <li><a href="materno-emergencias.html" class="nav__link">Emergencias 24/7</a></li>
+          <li class="nav__dropdown">
+            <button class="nav__link nav__dropdown-btn" aria-expanded="false">
+              Más <i data-lucide="chevron-down" stroke-width="2" aria-hidden="true"></i>
+            </button>
+            <ul class="nav__submenu">
+              <li><a href="microrred.html">Microrred Mochumí</a></li>
+              <li><a href="tramites.html">Trámites y Transparencia</a></li>
+              <li><a href="noticias.html">Noticias y Galería</a></li>
+              <li><a href="inversiones.html">Proyectos PROINVERSIÓN</a></li>
+              <li><a href="faq.html">Preguntas Frecuentes</a></li>
+              <li><a href="contacto.html">Contacto y Ubicación</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="citas.html" class="btn btn--primario btn--nav">
+              <i data-lucide="calendar-check" stroke-width="2" aria-hidden="true"></i> Solicitar Cita
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+  <!-- CONTENIDO PRINCIPAL (Esta es la única sección que cambiarás en las otras 11 páginas) -->
+  <main id="contenido-principal">
   <section class="page-header">
     <div class="container">
       <div class="breadcrumb">Inicio / Noticias y Galería</div>
@@ -8,12 +97,10 @@
   </section>
 
   <!-- Hojas de Estilo Modulares -->
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/componentes.css">
 
+<link rel="stylesheet" href="css/global.css">
 
-  <section class="section">
+<section class="section">
     <div class="container">
       <div class="grid-3">
         <article class="card-acceso">
@@ -40,3 +127,53 @@
     </div>
   </section>
 </main>
+
+  <!-- FOOTER INSTITUCIONAL -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <h3>Centro de Salud de Mochumí</h3>
+        <p>Establecimiento de Primer Nivel de Atención (Categoría I-3) adscrito a la Red de Salud Lambayeque — GERESA Lambayeque.</p>
+        <p class="footer__tag"><strong>RENIPRESS:</strong> 00004380 | <strong>RUC:</strong> 20437220183</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="servicios.html">Cartera de Servicios I-3</a></li>
+          <li><a href="citas.html">Citas y Orientación Virtual</a></li>
+          <li><a href="tramites.html">Transparencia y Libro de Reclamaciones</a></li>
+          <li><a href="faq.html">Preguntas Frecuentes (FAQ)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contacto Oficial</h4>
+        <ul class="footer__contacto">
+          <li><i data-lucide="map-pin" stroke-width="2" aria-hidden="true"></i> Calle Federico Villarreal S/N, Mochumí</li>
+          <li><i data-lucide="phone" stroke-width="2" aria-hidden="true"></i> (074) 424430</li>
+          <li><i data-lucide="clock" stroke-width="2" aria-hidden="true"></i> Atención: 12 horas diarias (Urgencias 24/7)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 Centro de Salud de Mochumí — Gerencia Regional de Salud Lambayeque. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE CONSTANTE: WHATSAPP / TELEATIENDE (Esquina inferior derecha) -->
+  <a href="citas.html" class="fab-asistente" aria-label="Asistente virtual de WhatsApp y Teleatiende para consultas y urgencias">
+    <i data-lucide="message-circle" stroke-width="2" aria-hidden="true"></i>
+    <span>Orientación / Teleatiende</span>
+  </a>
+
+  <!-- Script Nativo -->
+  <script src="js/main.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

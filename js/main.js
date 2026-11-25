@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const alerta = form.querySelector('.form-respuesta');
       if (alerta) {
         alerta.style.display = 'block';
-        alerta.textContent = 'Solicitud recibida correctamente. Nuestro equipo de admisión del C.S. Mochumí se comunicará contigo a la brevedad.';
+        alerta.textContent = 'Formulario de demostración. No se ha enviado ninguna solicitud al centro de salud.';
       }
       form.reset();
     });
