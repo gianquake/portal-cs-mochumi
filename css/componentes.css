@@ -2296,3 +2296,1258 @@ background-repeat: no-repeat;
     }
 
 }
+
+
+
+/* ==========================================
+   NOSOTROS - RESEÑA HISTÓRICA
+========================================== */
+
+.nosotros-historia {
+    padding: 75px 0;
+    background-color: #FFFFFF;
+}
+
+/* Encabezado */
+
+.nosotros-historia__encabezado {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.nosotros-historia__encabezado h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(26px, 3vw, 36px);
+    color: #0C3B60;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.nosotros-historia__encabezado p {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Línea de tiempo */
+
+.historia-linea {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.historia-linea::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    left: 29px;
+    width: 3px;
+    background-color: #B5D9C8;
+}
+
+/* Acontecimientos */
+
+.historia-evento {
+    position: relative;
+    display: grid;
+    grid-template-columns: 60px minmax(0, 1fr);
+    align-items: start;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.historia-evento:last-child {
+    margin-bottom: 0;
+}
+
+/* Iconos */
+
+.historia-evento__icono {
+    position: relative;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+    background-color: #00875A;
+    border: 4px solid #FFFFFF;
+    border-radius: 50%;
+
+    box-shadow: 0 0 0 2px #DCE7E1;
+    box-sizing: border-box;
+}
+
+.historia-evento__icono svg {
+    width: 25px;
+    height: 25px;
+}
+
+/* Tarjetas */
+
+.historia-evento__contenido {
+    background-color: #F4F9F5;
+    border: 1px solid #DCE7E1;
+    border-left: 4px solid #00875A;
+    border-radius: 14px;
+    padding: 28px 32px;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.historia-evento__contenido:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(12, 59, 96, 0.10);
+}
+
+/* Año */
+
+.historia-evento__fecha {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #006B47;
+    margin-bottom: 10px;
+}
+
+/* Títulos y párrafos */
+
+.historia-evento__contenido h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #0C3B60;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.historia-evento__contenido p {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+/* Enlaces a fuentes */
+
+.historia-evento__contenido a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #006B47;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.historia-evento__contenido a:hover {
+    color: #0C3B60;
+}
+
+.historia-evento__contenido a svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .nosotros-historia {
+        padding: 45px 0;
+    }
+
+    .historia-evento {
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 14px;
+    }
+
+    .historia-evento__icono {
+        width: 42px;
+        height: 42px;
+    }
+
+    .historia-evento__icono svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .historia-linea::before {
+        left: 20px;
+        top: 21px;
+        bottom: 21px;
+    }
+
+    .historia-evento__contenido {
+        padding: 20px;
+    }
+
+    .historia-evento__fecha {
+        font-size: 25px;
+    }
+
+    .historia-evento__contenido h3 {
+        font-size: 18px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .historia-evento__contenido {
+        transition: none;
+    }
+
+    .historia-evento__contenido:hover {
+        transform: none;
+    }
+
+}
+
+/* ==========================================
+   NOSOTROS - VALORES INSTITUCIONALES
+========================================== */
+
+.nosotros-valores {
+    padding: 75px 0;
+    background-color: #F4F9F5;
+}
+
+/* Encabezado */
+
+.nosotros-valores__encabezado {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.nosotros-valores__encabezado h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(26px, 3vw, 36px);
+    color: #0C3B60;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.nosotros-valores__encabezado p {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Distribución de tarjetas */
+
+.nosotros-valores__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+/* Tarjetas */
+
+.valor-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    padding: 35px 28px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #DCE7E1;
+    border-radius: 18px;
+
+    box-shadow: 0 6px 20px rgba(12, 59, 96, 0.05);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.valor-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(12, 59, 96, 0.12);
+    border-color: #00875A;
+}
+
+/* Iconos circulares */
+
+.valor-card__icono {
+    width: 78px;
+    height: 78px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    margin-bottom: 24px;
+
+    transition: transform 0.3s ease;
+}
+
+.valor-card__icono svg {
+    width: 35px;
+    height: 35px;
+}
+
+.valor-card:hover .valor-card__icono {
+    transform: scale(1.1);
+}
+
+/* Títulos */
+
+.valor-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #0C3B60;
+    line-height: 1.4;
+    margin-bottom: 14px;
+}
+
+/* Descripciones */
+
+.valor-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #475569;
+    margin: 0;
+}
+
+/* Variante verde */
+
+.valor-card--verde .valor-card__icono {
+    background-color: #E3F2EB;
+    color: #00875A;
+}
+
+/* Variante azul */
+
+.valor-card--azul .valor-card__icono {
+    background-color: #E8EFF6;
+    color: #0C3B60;
+}
+
+/* Variante amarilla */
+
+.valor-card--amarillo .valor-card__icono {
+    background-color: #FFF6D9;
+    color: #876900;
+}
+
+/* ==========================================
+   DISEÑO RESPONSIVE
+========================================== */
+
+@media (max-width: 960px) {
+
+    .nosotros-valores__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .nosotros-valores {
+        padding: 45px 0;
+    }
+
+    .nosotros-valores__grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .valor-card {
+        padding: 28px 22px;
+    }
+
+    .valor-card__icono {
+        width: 65px;
+        height: 65px;
+    }
+
+    .valor-card__icono svg {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+/* Accesibilidad del movimiento */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .valor-card,
+    .valor-card__icono {
+        transition: none;
+    }
+
+    .valor-card:hover,
+    .valor-card:hover .valor-card__icono {
+        transform: none;
+    }
+
+}
+
+
+
+/* ==========================================
+   NOSOTROS - FICHA INSTITUCIONAL
+========================================== */
+
+.nosotros-ficha {
+    padding: 75px 0;
+    background-color: #FFFFFF;
+}
+
+/* Encabezado */
+
+.nosotros-ficha__encabezado {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.nosotros-ficha__encabezado h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(26px, 3vw, 36px);
+    color: #0C3B60;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.nosotros-ficha__encabezado p {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Distribución de las tarjetas */
+
+.nosotros-ficha__grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 28px;
+}
+
+/* Tarjeta de identidad */
+
+.ficha-identidad {
+    background: linear-gradient(
+        145deg,
+        #0C3B60,
+        #164F77
+    );
+
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 38px;
+
+    box-shadow: 0 12px 30px rgba(12, 59, 96, 0.15);
+}
+
+.ficha-identidad__icono {
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    margin-bottom: 25px;
+}
+
+.ficha-identidad__icono svg {
+    width: 38px;
+    height: 38px;
+}
+
+.ficha-identidad__etiqueta {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #DDE8F0;
+    margin-bottom: 12px;
+}
+
+.ficha-identidad h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    color: #FFFFFF;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.ficha-identidad p {
+    color: #DDE8F0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.ficha-identidad__separador {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.20);
+    margin: 25px 0;
+}
+
+/* Código RENIPRESS */
+
+.ficha-identidad__codigo {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+/* Categoría sanitaria */
+
+.ficha-identidad__categoria {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #E6B800;
+    color: #0C3B60;
+
+    font-weight: 700;
+    padding: 10px 18px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.ficha-identidad__categoria svg {
+    width: 20px;
+    height: 20px;
+}
+
+.ficha-identidad__detalle {
+    margin-bottom: 0;
+}
+
+/* Tarjeta de datos institucionales */
+
+.ficha-datos {
+    background-color: #F4F9F5;
+    border: 1px solid #DCE7E1;
+    border-radius: 20px;
+    padding: 15px 30px;
+}
+
+.ficha-datos__lista {
+    margin: 0;
+}
+
+.ficha-dato {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 20px 0;
+    border-bottom: 1px solid #DCE7E1;
+}
+
+.ficha-dato:last-child {
+    border-bottom: none;
+}
+
+.ficha-dato > svg {
+    width: 25px;
+    height: 25px;
+    color: #00875A;
+    flex-shrink: 0;
+}
+
+.ficha-dato dt {
+    color: #475569;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.ficha-dato dd {
+    color: #0C3B60;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Documentación institucional */
+
+.ficha-documentos {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    margin-top: 28px;
+    padding: 28px;
+
+    background-color: #F4F9F5;
+    border: 1px solid #DCE7E1;
+    border-left: 5px solid #00875A;
+    border-radius: 14px;
+}
+
+.ficha-documentos__icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 65px;
+    height: 65px;
+    border-radius: 14px;
+
+    background-color: #E3F2EB;
+    color: #00875A;
+    flex-shrink: 0;
+}
+
+.ficha-documentos__icono svg {
+    width: 32px;
+    height: 32px;
+}
+
+.ficha-documentos h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    color: #0C3B60;
+    margin-bottom: 10px;
+}
+
+.ficha-documentos p {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Enlaces de documentación */
+
+.ficha-documentos__enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 25px;
+}
+
+.ficha-documentos__enlaces a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #006B47;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.ficha-documentos__enlaces a:hover {
+    color: #0C3B60;
+}
+
+.ficha-documentos__enlaces svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
+
+/* ==========================================
+   DISEÑO RESPONSIVE
+========================================== */
+
+@media (max-width: 960px) {
+
+    .nosotros-ficha__grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .nosotros-ficha {
+        padding: 45px 0;
+    }
+
+    .ficha-identidad {
+        padding: 28px;
+    }
+
+    .ficha-identidad h3 {
+        font-size: 24px;
+    }
+
+    .ficha-datos {
+        padding: 12px 20px;
+    }
+
+    .ficha-dato {
+        gap: 14px;
+    }
+
+    .ficha-dato dd {
+        font-size: 14px;
+    }
+
+    .ficha-documentos {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 22px;
+    }
+
+}
+
+/* ==========================================
+   NOSOTROS - ESTRUCTURA ORGANIZATIVA
+========================================== */
+
+.nosotros-organizacion {
+    padding: 75px 0;
+    background-color: #F4F9F5;
+}
+
+/* Encabezado */
+
+.nosotros-organizacion__encabezado {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.nosotros-organizacion__encabezado h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(26px, 3vw, 36px);
+    color: #0C3B60;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.nosotros-organizacion__encabezado p {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Organigrama */
+
+.organigrama {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.organigrama__nivel {
+    display: flex;
+    justify-content: center;
+}
+
+/* Tarjetas principales */
+
+.org-card {
+    width: 100%;
+    max-width: 460px;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(12, 59, 96, 0.08);
+}
+
+.org-card svg {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 12px;
+}
+
+.org-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: inherit;
+}
+
+.org-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: inherit;
+    margin: 0;
+}
+
+/* Colores institucionales */
+
+.org-card--azul {
+    background-color: #0C3B60;
+    color: #FFFFFF;
+}
+
+.org-card--blanco {
+    background-color: #FFFFFF;
+    color: #0C3B60;
+    border: 1px solid #DCE7E1;
+}
+
+.org-card--blanco svg {
+    color: #00875A;
+}
+
+.org-card--verde {
+    background-color: #006B47;
+    color: #FFFFFF;
+}
+
+/* Líneas de conexión */
+
+.org-conector {
+    width: 3px;
+    height: 35px;
+    background-color: #9DBCB2;
+    margin: 0 auto;
+}
+
+/* Distribución de puestos de salud */
+
+.organigrama__puestos {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    padding-top: 30px;
+}
+
+.organigrama__puestos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc((100% - 50px) / 6);
+    right: calc((100% - 50px) / 6);
+    height: 3px;
+    background-color: #9DBCB2;
+}
+
+/* Tarjetas de puestos */
+
+.org-puesto {
+    position: relative;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE7E1;
+    border-radius: 16px;
+    padding: 28px 18px;
+    text-align: center;
+
+    box-shadow: 0 8px 24px rgba(12, 59, 96, 0.06);
+    transition: box-shadow 0.3s ease;
+}
+
+.org-puesto::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 31px;
+    background-color: #9DBCB2;
+    top: -31px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.org-puesto:hover {
+    box-shadow: 0 12px 30px rgba(12, 59, 96, 0.15);
+}
+
+/* Iconos */
+
+.org-puesto__icono {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #E3F2EB;
+    color: #00875A;
+
+    border-radius: 14px;
+    margin: 0 auto 18px;
+}
+
+.org-puesto__icono svg {
+    width: 30px;
+    height: 30px;
+}
+
+.org-puesto span {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #006B47;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.org-puesto h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    color: #0C3B60;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Información y enlace */
+
+.organigrama__informacion {
+    max-width: 750px;
+    margin: 40px auto 0;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.organigrama__informacion p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #475569;
+}
+
+.organigrama__informacion a:not(.btn) {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #006B47;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.organigrama__informacion a svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* ==========================================
+   DISEÑO RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .nosotros-organizacion {
+        padding: 45px 0;
+    }
+
+    .organigrama__puestos {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding-top: 0;
+    }
+
+    .organigrama__puestos::before,
+    .org-puesto::before {
+        display: none;
+    }
+
+    .org-card h3 {
+        font-size: 18px;
+    }
+
+    .org-puesto {
+        padding: 25px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .org-puesto {
+        transition: none;
+    }
+
+}
+
+/* ==========================================
+   NOSOTROS - MANIFIESTO INSTITUCIONAL
+========================================== */
+
+.nosotros-manifiesto {
+    padding: 75px 0;
+    background-color: #FFFFFF;
+}
+
+/* Contenedor principal */
+
+.manifiesto-card {
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #0C3B60,
+        #164F77
+    );
+
+    border-radius: 24px;
+    padding: 60px 65px;
+    text-align: center;
+    color: #FFFFFF;
+
+    box-shadow: 0 15px 35px rgba(12, 59, 96, 0.15);
+}
+
+/* Decoraciones de fondo */
+
+.manifiesto-card::before,
+.manifiesto-card::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.manifiesto-card::before {
+    width: 350px;
+    height: 350px;
+    top: -180px;
+    right: -120px;
+}
+
+.manifiesto-card::after {
+    width: 450px;
+    height: 450px;
+    bottom: -250px;
+    left: -200px;
+}
+
+.manifiesto-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Icono principal */
+
+.manifiesto-card__icono {
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+
+    margin: 0 auto 25px;
+}
+
+.manifiesto-card__icono svg {
+    width: 45px;
+    height: 45px;
+    color: #FFFFFF;
+}
+
+/* Etiqueta y título */
+
+.manifiesto-card__etiqueta {
+    display: block;
+    color: #E6B800;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.manifiesto-card h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(28px, 4vw, 42px);
+    color: #FFFFFF;
+    line-height: 1.3;
+    margin-bottom: 22px;
+}
+
+.manifiesto-card__linea {
+    width: 65px;
+    height: 4px;
+    background-color: #E6B800;
+    border-radius: 10px;
+    margin: 0 auto 30px;
+}
+
+/* Texto del manifiesto */
+
+.manifiesto-card__texto {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.manifiesto-card__texto p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #E1EBF3;
+    margin-bottom: 20px;
+}
+
+/* Principios destacados */
+
+.manifiesto-principios {
+    max-width: 750px;
+    margin: 35px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.manifiesto-principio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    padding: 28px 15px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.manifiesto-principio:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.manifiesto-principio svg {
+    width: 35px;
+    height: 35px;
+    color: #E6B800;
+}
+
+.manifiesto-principio span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+/* Mensaje final */
+
+.manifiesto-card__cierre {
+    max-width: 800px;
+    margin: 35px auto 0;
+    padding-top: 35px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.manifiesto-card__cierre svg {
+    width: 35px;
+    height: 35px;
+    color: #E6B800;
+    margin-bottom: 18px;
+}
+
+.manifiesto-card__cierre p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(20px, 3vw, 28px);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.manifiesto-card__cierre span {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #E6B800;
+}
+
+/* ==========================================
+   DISEÑO RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .nosotros-manifiesto {
+        padding: 45px 0;
+    }
+
+    .manifiesto-card {
+        padding: 40px 25px;
+    }
+
+    .manifiesto-card__texto p {
+        font-size: 15px;
+    }
+
+    .manifiesto-principios {
+        gap: 12px;
+    }
+
+    .manifiesto-principio {
+        padding: 20px 10px;
+    }
+
+    .manifiesto-principio span {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .manifiesto-principios {
+        grid-template-columns: 1fr;
+    }
+
+    .manifiesto-principio {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+    .manifiesto-card__icono {
+        width: 75px;
+        height: 75px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .manifiesto-principio {
+        transition: none;
+    }
+
+    .manifiesto-principio:hover {
+        transform: none;
+    }
+
+}
